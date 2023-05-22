@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 
 using namespace std;
-int n,m; 
+int n,m;
 int k;
 int g[10004][10004];
 bool visisted[10004][10004];
@@ -27,17 +27,19 @@ void bfs(){
         q.pop_front();
         for(int i=0; i<4; i++)
         {
-          
+
                 if(check(x+mX[i],y+mY[x]) && !visisted[x+mX[i]][y+mY[i]])
-                {   
+                {
                     visisted[x+mX[i]][y+mY[i]]=true;
 
 
                 }
-            
+
         }
-    
+
     }
+    cout<<"hoan thanh"<<endl;
+    cout<<"hoan thanh"<<endl;
 }
 main()
 {
@@ -50,5 +52,5 @@ main()
         g[x][y]=1;
     }
     bfs();
-    
+
 }
